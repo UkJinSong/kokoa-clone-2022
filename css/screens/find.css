@@ -1,0 +1,135 @@
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.find-icons__icon {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+.find-icons__icon i {
+  font-size: 35px;
+}
+.find-icons__icon span {
+  display:flex;
+  align-items: center;
+  height: 32px;
+  margin-top: 18px;
+  text-align: center;
+}
+.recommended-friends {
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+  padding: 25px 0px;
+  color: rgba(0,0,0,0.5);
+}
+.recommended-friends__title {
+  font-size: 14px;
+}
+.recommended-friends span {
+  display: block;
+  margin: 100px 0px;
+  font-size: 18px;
+  text-align: center;
+}
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 15px 0px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.open-chat__header span {
+  opacity: 0.5;
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  border-bottom: var(--main-border);
+}
+.open-post__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.open-post__hashtags {
+  text-transform: uppercase;
+  opacity: 0.6;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+.open-post__members {
+  display: flex;
+  align-items: center;
+}
+.open-post__members img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.open-post__members-count {
+  opacity: 0.5;
+  font-size: 14px;
+}
+.open-post__members .divider {
+  width: 2px;
+  height: 14px;
+  background-color: black;
+  opacity: 0.2;
+  margin: 0px 5px;
+}
+.open-post__members-status {
+  color: #ffb0e0;
+  font-size: 14px;
+}
+
+.open-post__photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+.open-post__heart-count {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  bottom: 10px;
+  right: 10px;
+  font-size: 13px;
+}
+.open-post__heart-count span {
+  margin-left: 3px;
+}
+.open-post__photo {
+  position: relative;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}

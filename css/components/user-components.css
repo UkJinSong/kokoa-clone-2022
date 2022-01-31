@@ -1,5 +1,6 @@
 .user-components {
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .user-components,
@@ -9,7 +10,10 @@
 }
 
 .user-components__column:last-child {
-  color: rgba(0,0,0,0.5);
+  color: rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .user-components__avatar {
@@ -42,4 +46,7 @@
   width: 60px;
   height: 60px;
   border-radius: 24px;
+}
+.user-components__time {
+  margin-bottom: 10px;
 }
